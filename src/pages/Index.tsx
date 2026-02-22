@@ -64,7 +64,7 @@ const Index = () => {
               <div className="space-y-0">
                 {[
                   { label: "Hours", value: "Daily · 12:00 – 23:00" },
-                  { label: "Phone", value: "+212 6 00 00 00 00" },
+                  { label: "Phone", value: "0661767466" },
                   { label: "Address", value: "Ouarzazate, Morocco" },
                   { label: "Dress", value: "Desert chic" },
                 ].map((item) => (
