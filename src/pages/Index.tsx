@@ -1,11 +1,14 @@
+import { useState } from "react";
 import HeroSection from "@/components/HeroSection";
 import SectionHeader from "@/components/SectionHeader";
 import DishCard from "@/components/DishCard";
 import MenuDivider from "@/components/MenuDivider";
+import ReservationDialog from "@/components/ReservationDialog";
 import { menuSections } from "@/data/menuData";
 import patternBg from "@/assets/pattern-bg.png";
 
 const Index = () => {
+  const [reservationOpen, setReservationOpen] = useState(false);
   return (
     <div className="min-h-screen bg-background">
       <HeroSection />
@@ -47,12 +50,12 @@ const Index = () => {
                   Tell us your preferred time — we'll confirm quickly.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <a
-                    href="tel:0661767466"
-                    className="inline-flex items-center justify-center rounded-full bg-secondary text-secondary-foreground font-body text-sm px-6 py-3 hover:bg-secondary/90 transition-colors"
+                  <button
+                    onClick={() => setReservationOpen(true)}
+                    className="inline-flex items-center justify-center rounded-full bg-secondary text-secondary-foreground font-body text-sm px-6 py-3 hover:bg-secondary/90 transition-colors cursor-pointer"
                   >
                     Book for tonight
-                  </a>
+                  </button>
                   <a
                     href="tel:0661767466"
                     className="inline-flex items-center justify-center rounded-full border border-border font-body text-sm px-6 py-3 text-foreground hover:bg-accent transition-colors"
@@ -90,6 +93,8 @@ const Index = () => {
             Ouarzazate, Morocco
           </p>
         </footer>
+
+        <ReservationDialog open={reservationOpen} onOpenChange={setReservationOpen} />
       </div>
     </div>
   );
