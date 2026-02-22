@@ -63,7 +63,7 @@ const Index = () => {
               </div>
               <div className="space-y-0">
                 {[
-                  { label: "Hours", value: "Daily · 12:00 – 23:00" },
+                  { label: "Hours", value: "Daily · 06:30 – 00:00" },
                   { label: "Phone", value: "0661767466" },
                   { label: "Address", value: "Ouarzazate, Morocco" },
                   { label: "Dress", value: "Desert chic" },
