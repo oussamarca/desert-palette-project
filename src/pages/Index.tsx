@@ -48,13 +48,13 @@ const Index = () => {
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href="tel:+212600000000"
+                    href="tel:0661767466"
                     className="inline-flex items-center justify-center rounded-full bg-secondary text-secondary-foreground font-body text-sm px-6 py-3 hover:bg-secondary/90 transition-colors"
                   >
                     Book for tonight
                   </a>
                   <a
-                    href="tel:+212600000000"
+                    href="tel:0661767466"
                     className="inline-flex items-center justify-center rounded-full border border-border font-body text-sm px-6 py-3 text-foreground hover:bg-accent transition-colors"
                   >
                     Call the restaurant
